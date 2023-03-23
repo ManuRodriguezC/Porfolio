@@ -1,0 +1,269 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(144deg,#dbdade, #ffffff 60%,#dbdade);
+}
+
+
+.images-photo{
+    width: 300px;
+}
+
+/* Navbar */
+
+.wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(283, 82%, 7%);
+    padding: 1rem 1.5rem;
+}
+
+nav .name{
+    font-weight: 800;
+    font-size: x-large;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+nav #toggle, nav label{
+    display: none;
+}
+
+.btn{
+    background: hsl(283, 100%, 13%);
+}
+
+@media (max-width: 40.625rem){
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    nav label{
+        display: inline-flex;
+        color: white;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+}
+
+.download{
+    background: rgb(40, 107, 239);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.download:hover{
+    background: rgb(62, 120, 237);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Content of the personal information */
+.content{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.content-image{
+    width: 350px;
+    padding-left: 50px;
+}
+
+.content-image img{
+    border-radius: 50%;
+}
+
+.title-content{
+    display: flex;
+    justify-content: center;
+}
+
+.contents{
+    position: relative;
+    margin-right: 50px;
+}
+
+.contents h1{
+    font-size:40px;
+}
+
+.contents h3{
+    font-size:30px;
+}
+
+.contents p{
+    font-size: 20px;
+}
+
+
+/* Content of the style projects information */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.card{
+    height: 530px;
+    width: 300px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.card-content{
+    height: 530px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.card-content:hover{
+    transform: scale(0.98);
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    transition: all .5s;
+}
+
+
+.contain-image{
+    width: 300px;
+    height: 300px;
+}
+
+.images{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title-project{
+    font-size: x-large;
+}
+
+.title-project, .description-project,
+.tools-project, .url-project{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Style of the skills */
+.skills{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.skill-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px;
+}
+
+.skill-card{
+    height: 200px;
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.skill-img{
+    object-fit: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.skill-card h3{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.content-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 150px;
+}
+
+
+.content-contact ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.content-contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}
+
+.info{
+    background: rgb(40, 107, 239);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info:hover{
+    background: rgb(62, 120, 237);
+    padding: 10px;
+    border-radius: 5px;
+}
