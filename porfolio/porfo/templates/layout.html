@@ -12,22 +12,22 @@
 <body>
     <div class="wrapper">
         <nav>
-            <a class="name" href="{% url 'home' %}">Manu Rodriguez</a>
+            <a class="bar" href="{% url 'home' %}">Manu Rodriguez</a>
             <input type="checkbox" name="" id="toggle">
             <label for="toggle"><i class="material-icons">menu</i></label>
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="">About</a>
+                        <a class="bar" href="{% url 'home' %}#header">About</a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a class="bar" href="{% url 'home' %}#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#projects">Skills</a>
+                        <a class="bar" href="{% url 'home' %}#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#projects">Contact Me</a>
+                        <a class="bar" href="{% url 'home' %}#contact">Contact Me</a>
                     </li>
                     <li>
                         <a class="download" href="" target="_black">Download CV</a>
