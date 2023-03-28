@@ -28,7 +28,7 @@
                     <div class="contain-image">
                         <img class="images" src="{{project.image.url}}" alt="{{project.title}}"/>
                     </div>
-                    <a href="{% url 'project' project.id %}" class="title-project">{{project.title}}</a>
+                    <a href="{% url 'project' project.title %}" class="title-project">{{project.title}}</a>
                     <p class="description-project">{{project.description | truncatechars:120}}</p>
                     <h3 class="tools-project">{{project.tools}}</h3>
                     

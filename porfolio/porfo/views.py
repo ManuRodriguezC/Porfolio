@@ -9,6 +9,6 @@ def home(request):
                    'skills': skills}
     )
 
-def projects(request, project_id):
-    project = Project.objects.get(id=project_id)
+def projects(request, project_title):
+    project = Project.objects.get(title=project_title)
     return render(request, 'project.html', {'project': project})
